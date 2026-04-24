@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="login-screen">
+            <h1 class="system-text">SYSTEM INITIALIZATION</h1>
+            <input type="text" id="username-input" placeholder="ENTER HUNTER NAME...">
+            <button onclick="login()" class="glow-button">AWAKEN</button>
+        </div>
+
+        <div id="stats-screen" style="display: none;">
+            <h2 id="hunter-name" class="name-tag">---</h2>
+            <div class="stat-box">
+                <p>LEVEL: <span id="level">1</span></p>
+                <p>RANK: <span id="rank">E-Rank</span></p>
+                <p>GRIND COUNT: <span id="grind">0</span></p>
+            </div>
+            <button onclick="grind()" class="glow-button">START GRINDING</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
